@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- style.css  -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -26,8 +26,8 @@
     <section class="header_menu" id="header_menu">
         <div class="container-fluid px-0 shadow">
             <nav class="navbar navbar-expand-lg navbar-light bg-light py-3  ">
-                <a class="navbar-brand pl-5" href="index.html">
-                    <img src="IMAGES/logo.png" width="150px" class="img img-fluid logo" alt="logo">
+                <a class="navbar-brand pl-5" href="javascript:;">
+                    <img src="assets/images/logo.png" class="img img-fluid" width="120px" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,15 +43,27 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="product.html">Product</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="category.html">Category</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
+                        <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
                     </ul>
                     <div class="search mr-3">
                         <a href="search.html" class="btn btn-sm btn-outline-primary">
@@ -70,128 +82,77 @@
     </section>
     <!-- ==============header menu section ends here============== -->
 
-    <!-- ==============category starts here============== -->
-    <section class="products py-5 my-5 bg-light" id="products">
-        <div class="container ">
-            <div class="section_title text-center mb-5">
-                <h1 class="text-capitalize">Categories</h1>
-            </div>
-            <div class="row mb-5">
-                <div class="col-md-4 col-12">
-                    <div class="single_product shadow text-center p-1">
-                        <div class="product_img">
-                            <a href="product.html"><img src="IMAGES/category1.jfif" class="img img-fluid rounded"
-                                    alt=""></a>
-                        </div>
-                        <div class="product-caption my-3">
-                            <h4><a href="product.html">xyz</a></h4>
-                        </div>
-                        <div class="mt-3">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
-                        <div class="product_img">
-                            <a href="product.html"><img src="IMAGES/category2.jfif" class="img img-fluid rounded"
-                                    alt=""></a>
-                            <div class="new_product">
-                                <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
-                            </div>
-                        </div>
-                        <div class="product-caption my-3">
-                            <h4><a href="product.html">xyz</a></h4>
-                        </div>
-                        <div class="mt-3">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="single_product shadow text-center p-1">
-                        <div class="product_img">
-                            <a href="product.html"><img src="IMAGES/category3.jfif" class="img img-fluid rounded"
-                                    alt=""></a>
-                            <div class="new_product">
-                                <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
-                            </div>
-                        </div>
-                        <div class="product-caption my-3">
-                            <h4><a href="product.html">xyz</a></h4>
-                        </div>
-                        <div class="mt-3">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+    <!-- ==============search section ends here============== -->
+
+    <section class="search_section py-5 my-5" id="search_section">
+        <div class="container">
+            <div class="title text-center mb-5">
+                <h2><i class="far fa-file mr-2"></i>Search</h2>
             </div>
             <div class="row">
-                <div class="col-md-4 col-12">
-                    <div class="single_product shadow text-center p-1">
-                        <div class="product_img">
-                            <a href="product.html"><img src="IMAGES/category3.jfif" class="img img-fluid rounded"
-                                    alt=""></a>
-                            <div class="new_product">
-                                <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
-                            </div>
-                        </div>
-                        <div class="product-caption my-3">
-                            <h4><a href="product.html">xyz</a></h4>
-                        </div>
-                        <div class="mt-3">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad!
-                            </p>
-                        </div>
+                <!-- BEGIN RESULT -->
+                <div class="col-md-10 mx-auto">
+                    <!-- BEGIN SEARCH INPUT -->
+                    <div class="input-group">
+                        <input type="text" class="form-control" value="xyz">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                        </span>
                     </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
-                        <div class="product_img">
-                            <a href="product.html"><img src="IMAGES/category2.jfif" class="img img-fluid rounded"
-                                    alt=""></a>
-                            <div class="new_product">
-                                <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
-                            </div>
-                        </div>
-                        <div class="product-caption my-3">
-                            <h4><a href="product.html">xyz</a></h4>
-                        </div>
-                        <div class="mt-3">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="single_product shadow text-center p-1">
-                        <div class="product_img">
-                            <a href="product.html"><img src="IMAGES/category1.jfif" class="img img-fluid rounded"
-                                    alt=""></a>
-                        </div>
-                        <div class="product-caption my-3">
-                            <h4><a href="product.html">xyz</a></h4>
-                        </div>
-                        <div class="mt-3">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <!-- END SEARCH INPUT -->
+                    <small>Showing all results matching "xyz"</small>
 
+                    <!-- BEGIN TABLE RESULT -->
+                    <div class="table-responsive mt-3">
+                        <table class="table table-hover">
+                            <tbody class="border-bottom">
+                                <tr>
+                                    <td class="number text-center">1</td>
+                                    <td class="image"><img src="assets/images/product1.png" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>Product 1</strong><br>This is the product description.
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                    <td class="price text-right">₹350</td>
+                                </tr>
+                                <tr>
+                                    <td class="number text-center">2</td>
+                                    <td class="image"><img src="assets/images/product2.png" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>Product 1</strong><br>This is the product description.
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                    <td class="price text-right">₹350</td>
+                                </tr>
+                                <tr>
+                                    <td class="number text-center">3</td>
+                                    <td class="image"><img src="assets/images/product3.png" width="100px"
+                                            class="img img-fluid" alt=""></td>
+                                    <td class="product"><strong>Product 1</strong><br>This is the product description.
+                                    </td>
+                                    <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
+                                    <td class="price text-right">₹350</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END TABLE RESULT -->
+                </div>
+                <!-- END RESULT -->
+            </div>
         </div>
     </section>
-    <!-- ==============category ends here============== -->
+
+    <!-- ==============search section ends here============== -->
+
+
 
     <!-- ==============footer starts here============== -->
     <section class="footer_section pt-5 pb-2 mt-5" id="footer_section">
@@ -200,9 +161,7 @@
                 <div class="row">
                     <div class="col-md-3 col-6 pl-5">
                         <div class="footer_title">
-                            <a href="index.html">
-                                <img src="IMAGES/logo.png" width="150px" class="img img-fluid logo" alt="logo">
-                            </a>
+                            <img src="assets/images/logo.png" width="150px" class="img img-fluid" alt="logo">
                         </div>
                         <div>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam est illum ipsum

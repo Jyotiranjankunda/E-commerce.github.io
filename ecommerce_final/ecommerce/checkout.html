@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- style.css  -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -27,7 +27,7 @@
         <div class="container-fluid px-0 shadow">
             <nav class="navbar navbar-expand-lg navbar-light bg-light py-3  ">
                 <a class="navbar-brand pl-5" href="javascript:;">
-                    <img src="IMAGES/logo.png" class="img img-fluid logo" width="120px" alt="logo">
+                    <img src="assets/images/logo.png" class="img img-fluid" width="120px" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -52,13 +52,25 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
+                        <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
                     </ul>
                     <div class="search mr-3">
                         <a href="search.html" class="btn btn-sm btn-outline-primary">
                             Search
                         </a>
                     </div>
-                    <div class="cart active">
+                    <div class="cart">
                         <a href="cart.html">
                             <i class="fas fa-shopping-cart fa-2x"></i>
                             <span class="badge badge-pill badge-primary">24</span>
@@ -70,118 +82,113 @@
     </section>
     <!-- ==============header menu section ends here============== -->
 
-    <!-- ==============cart starts here============== -->
-    <section class="cart py-5 my-5" id="cart">
+    <!-- ==============Checkout starts here============== -->
+    <section class="Checkout py-5 my-5" id="Checkout">
         <div class="container ">
             <div class="section_title text-center mb-5">
-                <h1 class="text-capitalize">Cart</h1>
+                <h1 class="text-capitalize">Checkout</h1>
             </div>
-            <div class="row bg_cart_1 rounded">
+            <div class="row">
                 <!--Grid column-->
-                <div class="col-md-8 border-right">
+                <div class="col-lg-8">
                     <!-- Card -->
-                    <div class="mb-3">
-                        <div class="pt-4">
-                            <h5 class="mb-4">Cart (<span>2</span> items)</h5>
-                            <div class="row mb-4">
-                                <div class="col-md-5 col-lg-3 col-xl-3">
-                                    <div class="rounded mb-3 mb-md-0">
-                                        <img class="img-fluid w-100 rounded" src="IMAGES/product1.png" alt="Sample">
+                    <div class="card bg_checkout_1 pb-5">
+                        <div class="card-body">
+                            <h5 class="mb-5">Billing details</h5>
+                            <!-- Grid row -->
+                            <div class="row">
+                                <!-- Grid column -->
+                                <div class="col-lg-6">
+                                    <!-- First name -->
+                                    <div class="form-group mb-0 mb-lg-4">
+                                        <label for="firstName">First name</label>
+                                        <input type="text" id="firstName" class="form-control mb-0 mb-lg-2">
                                     </div>
                                 </div>
-                                <div class="col-md-7 col-lg-9 col-xl-9">
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5>Blue denim shirt</h5>
-                                                <p class="mb-3 text-muted text-uppercase small">Shirt - blue</p>
-                                                <p class="mb-2 text-muted text-uppercase small">Color: blue</p>
-                                                <p class="mb-3 text-muted text-uppercase small">Size: M</p>
-                                            </div>
-                                            <div>
-                                                <div class="mb-0 w-100">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
-                                                        value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                                <small class="form-text text-muted text-center">
-                                                    (Note, 1 piece)
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <a href="javascript:;" type="button"
-                                                    class="small text-uppercase mr-3"><i
-                                                        class="fas fa-trash-alt mr-1"></i> Remove item </a>
-                                            </div>
-                                            <p class="mb-0"><span><strong id="summary">₹17.99</strong></span></p
-                                                class="mb-0">
-                                        </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-lg-6">
+                                    <!-- Last name -->
+                                    <div class="form-group md-outline">
+                                        <label for="lastName">Last name</label>
+                                        <input type="text" id="lastName" class="form-control">
                                     </div>
+                                </div>
+                                <!-- Grid column -->
+                            </div>
+                            <!-- Grid row -->
+
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label for="form18">Phone</label>
+                                <input type="number" id="form18" class="form-control">
+                            </div>
+
+                            <!-- Email address -->
+                            <div class="form-group">
+                                <label for="form19">Email address</label>
+                                <input type="email" id="form19" class="form-control">
+                            </div>
+
+                            <!-- Country -->
+                            <div class="d-flex flex-wrap">
+                                <div class="w-100">
+                                    <label>Country</label>
+                                    <select class="custom-select form-group">
+                                        <option value="" selected>Choose your option</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
                                 </div>
                             </div>
-                            <hr class="mb-4">
-                            <div class="row mb-4">
-                                <div class="col-md-5 col-lg-3 col-xl-3">
-                                    <div class="rounded mb-3 mb-md-0">
-                                        <img class="img-fluid w-100 rounded" src="IMAGES/product3.png" alt="Sample">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-9 col-xl-9">
-                                    <div>
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5>Red hoodie</h5>
-                                                <p class="mb-3 text-muted text-uppercase small">Shirt - red</p>
-                                                <p class="mb-2 text-muted text-uppercase small">Color: red</p>
-                                                <p class="mb-3 text-muted text-uppercase small">Size: M</p>
-                                            </div>
-                                            <div>
-                                                <div class="mb-0 w-100">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-minus"></i>
-                                                    </button>
-                                                    <input class="quantity text-center" min="0" max="10" name="quantity"
-                                                        value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="btn btn-sm btn-outline-primary">
-                                                        <i class="fas fa-plus"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <a href="javascript:;" type="button"
-                                                    class="card-link-secondary small text-uppercase mr-3">
-                                                    <i class="fas fa-trash-alt mr-1"></i> Remove item
-                                                </a>
-                                            </div>
-                                            <p class="mb-0"><span><strong>₹35.99</strong></span></p class="mb-0">
-                                        </div>
-                                    </div>
-                                </div>
+
+                            <!-- Address Part 1 -->
+                            <div class="form-group">
+                                <label for="form14">Address Line 1</label>
+                                <input type="text" id="form14" placeholder="House number and street name"
+                                    class="form-control">
+                            </div>
+
+                            <!-- Address Part 2 -->
+                            <div class="form-group">
+                                <label for="form15">Address Line 2</label>
+                                <input type="text" id="form15" placeholder="Apartment, suite, unit etc. (optional)"
+                                    class="form-control">
+                            </div>
+
+                            <!-- Postcode / ZIP -->
+                            <div class="form-group">
+                                <label for="form16">Postcode / ZIP</label>
+                                <input type="text" id="form16" class="form-control">
+                            </div>
+
+                            <!-- Town / City -->
+                            <div class="form-group">
+                                <label for="form17">Town / City</label>
+                                <input type="text" id="form17" class="form-control">
+                            </div>
+
+                            <!-- Additional information -->
+                            <div class="form-group">
+                                <label for="form76">Additional information</label>
+                                <textarea id="form76" class="md-textarea form-control" rows="4"></textarea>
+                            </div>
+                            <!-- <button class="btn btn-success"><i class="fa fa-check"></i> Purchase</button> -->
+                            <div class="text-center">
+                                <a href="order_confirmation.html" class="btn btn-primary">
+                                    <i class="fa fa-check mr-2"></i>Purchase
+                                </a>
                             </div>
                         </div>
                     </div>
+                    <!-- Card -->
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-md-4  rounded">
+                <div class="col-lg-4 bg_checkout_1 h-25 rounded">
                     <!-- Card -->
                     <div class="mb-3">
                         <div class="pt-4">
@@ -210,7 +217,6 @@
                                     <span><strong>₹53.98</strong></span>
                                 </li>
                             </ul>
-                            <a href="checkout.html" class="btn btn-primary btn-block">Go to Checkout</a>
                         </div>
                     </div>
                     <!-- Card -->
@@ -220,7 +226,7 @@
         </div>
     </section>
 
-    <!-- ==============cart ends here============== -->
+    <!-- ==============Checkout ends here============== -->
 
     <!-- ==============footer starts here============== -->
     <section class="footer_section pt-5 pb-2 mt-5" id="footer_section">
@@ -229,7 +235,7 @@
                 <div class="row">
                     <div class="col-md-3 col-6 pl-5">
                         <div class="footer_title">
-                            <img src="IMAGES/logo.png" width="150px" class="img img-fluid logo" alt="logo">
+                            <img src="assets/images/logo.png" width="150px" class="img img-fluid" alt="logo">
                         </div>
                         <div>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam est illum ipsum
